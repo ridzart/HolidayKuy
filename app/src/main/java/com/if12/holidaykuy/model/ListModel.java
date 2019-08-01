@@ -7,10 +7,10 @@ public class ListModel {
     private String imgActivityUrl;
     private String caption;
     private String nama;
-    private String tracking;
     private Double Lat;
     private Double Lng;
-    private String namaLokasi;
+    private String kontak;
+    private String web;
 
     public int getIdActivity() {return idActivity;}
 
@@ -32,14 +32,6 @@ public class ListModel {
 
     public void setNama(String nama){this.nama = nama;}
 
-    public String getTracking() {
-        return tracking;
-    }
-
-    public void setTracking(String tracking) {
-        this.tracking = tracking;
-    }
-
     public Double getLat() {
         return Lat;
     }
@@ -56,11 +48,19 @@ public class ListModel {
         Lng = lng;
     }
 
-    public String getNamaLokasi() {
-        return namaLokasi;
+    public String getKontak() {
+        return kontak;
     }
 
-    public void setNamaLokasi(String namaLokasi) {
-        this.namaLokasi = namaLokasi;
+    public void setKontak(String kontak) {
+        this.kontak = kontak;
+    }
+
+    public String getWeb() {
+        return web;
+    }
+
+    public void setWeb(String web) {
+        this.web = web;
     }
 }

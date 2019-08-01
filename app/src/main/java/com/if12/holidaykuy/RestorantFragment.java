@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -14,7 +15,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.if12.holidaykuy.adapter.RestorantRecyclerAdapter;
 import com.if12.holidaykuy.model.RestorantModel;
 import com.if12.holidaykuy.presenter.RestorantPresenter;
@@ -48,6 +55,7 @@ public class RestorantFragment extends Fragment implements RestorantView {
     private RestorantRecyclerAdapter adapterRestorant;
     private List<RestorantModel> restorantModels = new ArrayList<>();
     private RestorantPresenter presenterRestorant;
+    private DatabaseReference reference;
 
     private OnFragmentInteractionListener mListener;
 
@@ -98,9 +106,8 @@ public class RestorantFragment extends Fragment implements RestorantView {
         recyclerViewRestorant = getView().findViewById(R.id.recycler_restorant);
         recyclerViewRestorant.setLayoutManager(new StaggeredGridLayoutManager(2, LinearLayoutManager.VERTICAL));
 
-        adapterRestorant = new RestorantRecyclerAdapter(getContext(), restorantModels);
-        recyclerViewRestorant.setAdapter(adapterRestorant);
-
+                adapterRestorant = new RestorantRecyclerAdapter(getContext(), restorantModels);
+                recyclerViewRestorant.setAdapter(adapterRestorant);
 
 
         //load activity

@@ -12,24 +12,49 @@ public class HotelPresenterImpl implements HotelPresenter {
     private HotelView hotelView;
     private Context mContext;
 
-    private String[] title = {
-            "Ciwidey", "Lembang", "Citarum", "Lembang", "Kota Bandung", "Ciburial", "Cibangkong", "Ciburial", "Cipaganti", "Pasirlayung", "Cihaur Geulis",
-            "Pagerwangi"
+    private String[] nama = {
+            "S'Rizki Hotel", "Hotel Paranti", "Pandeglang Raya Hotel"
     };
 
-    private String[] img = {
-            "https://i.pinimg.com/originals/b2/e3/d0/b2e3d0e29c003798a16b513f1713e99f.jpg",
-            "https://i.pinimg.com/originals/da/e2/bb/dae2bbed8199723e8c3066a3fb09098d.jpg",
-            "https://i.pinimg.com/originals/22/7f/b2/227fb2e695b5ad6186cb5c3557ffa48b.jpg",
-            "https://i.pinimg.com/originals/4f/04/83/4f048313ba7bb63283f19705e022bc53.jpg",
-            "https://www.nativeindonesia.com/wp-content/uploads/2018/09/Jalan-Braga-1.jpg",
-            "https://airebobichon.files.wordpress.com/2017/08/6-tahuradjuanda-jabarprov-go-id.jpg",
-            "https://meloaku.com/wp-content/uploads/2017/12/trans-studio-bandung-e1512473316400.jpg",
-            "https://media.travelingyuk.com/wp-content/uploads/2019/02/mulkisalman_46707263_339891393459402_2875645931633848811_n-1.jpg",
-            "https://meloaku.com/wp-content/uploads/2017/12/Cihampelas-Walk-Bandung.jpg",
-            "https://meloaku.com/wp-content/uploads/2017/12/art-performance-saung-angklung-udjo-bandung.jpg",
-            "https://idetrips.com/wp-content/uploads/2018/10/Museum-Geologi-Bandung.jpg",
-            "https://22arahmadini.files.wordpress.com/2017/06/img20170629115542.jpg?w=1400"
+    private String[] actiImg = {
+            "https://origin.pegipegi.com/jalan/images/pict1L/Y2/Y914152/Y914152014.jpg",
+            "https://1.bp.blogspot.com/-iJ5fzErZkWY/WQPmsdohqAI/AAAAAAAACAI/LOOsHrGPU8sOuNDTfoCF37sZrQrnfRg6QCLcB/s1600/images%2B%25281%2529.jpg",
+            "https://fastly.4sqi.net/img/general/200x200/25437314_Z1DNHe-8ProyrPu2WBVGfp78Z4owdPzMSZuLPMySZUE.jpg"
+    };
+
+    private String[] location = {
+            "Jl. Raya Serang KM1, Pandeglang, Kec. Pandeglang, Kabupaten Pandeglang, Banten",
+            "Jl. Mayor Widagdo No.3, Kabayan, Kec. Pandeglang, Kabupaten Pandeglang, Banten",
+            "Jl. Raya Labuan No. 7, Gardu Tanjak, Pandeglang, Pandeglang Sub-District, Pandeglang Regency, Banten "
+    };
+
+    private String[] kontak = {
+            "0253206600", "0253201176", "081911194399"
+    };
+
+    private String[] web = {
+            "http://rizhotelpandeglang.blogspot.com/", "Tidak memiliki alamat web", "https://pandeglang-raya-hotel.business.site/"
+    };
+
+    private String[] caption = {
+            "Penginapan Yang Tenang Dan Nyaman di Pandeglang.\n" +
+                    "\n" +
+                    "Sebuah hunian yang nyaman, bersih, dan desain yang minimalis. Pandeglang S'Rizki Hotel menawarkan pelayanan yang istimewa dan fasilitas yang akan membuat pengalaman menginap Anda tidak terlupakan, seperti Wi-Fi gratis di semua kamar, TV, AC, kulkas, restoran, layanan kebersihan, resepsionis yang ramah, Wi-fi di tempat umum dan tempat parkir yang menjamin kenyamanan bagi Anda semua.",
+            "Hotel yang berada di Kabupaten Pandeglang. Hotel ini merupakan salah satu hotel berbintang / bintang yang banyak direkomendasikan (hotel recommended) di Kabupaten Pandeglang. Dilengkapi dengan fasilitas penunjang seperti parkiran, listrik air lancar, wifi (jika tersedia), tempat tidur, lemari, TV, AC, kamar-kamar yang nyaman dan lainnya. Hotel Paranti menawarkan kamar hotel Kabupaten Pandeglang dengan harga yang murah karena ada potongan harga, diskon, dan promo dengan kualitas bagus dan terbaik.\n" +
+                    "\n" +
+                    "Cocok untuk menjadi tempat menginap dan istirahat bagi wisatawan, turis, backpacker, traveller, keluarga (family) dan lainnya. Cara booking hotel ini juga sangat mudah karna bisa dilakukan dengan mudah melalui aplikasi pemesanan dan booking online (jika tersedia). Booking dapat dilakukan baik untuk pemesanan kamar hotel harian dan mingguan. Hotel yang dekat dari Jl.Mayor Widagdo (3rd Jalan Mayor Jenderal Widagdo), Pandeglang, Banten INA, Indonesia ini bisa menjadi pilihan Anda untuk menginap di Kabupaten Pandeglang baik sendiri, group, kelompok dan keluarga.\n" +
+                    "\n" +
+                    "Segera kunjungi hotel terdekat ini (hotel near you) untuk informasi lainnya seperti informasi cari kamar hotel murah Kabupaten Pandeglang, harga sewa hotel, booking hotel Kabupaten Pandeglang, ketersediaan kamar, pesan / booking dan daftar hotel Kabupaten Pandeglang, fasilitas book now pay later dan lainnya. Anda juga bisa menghubungi kontak pengelola atau pengurus hotel ini untuk informasi lainnya atau melalui website jika tersedia.\n" +
+                    "\n",
+            "Pandeglang Raya hotel, penginapan yang berlokasi di pusat kota Pandeglang memiliki suasana yang asri juga lokasi yang strategis serta memiliki area parkir yang luas akan memberi kenyamanan lebih untuk Anda. Terdapat beberapa pilihan kamar dari VIP, Utama, Hingga Ekonomi, dengan fasilitas AC, TV, Kipas Angin, dan Extra Bed Disini juga terdapat MEETING ROOM yang berkapasitas 80  orang."
+    };
+
+    private Double[] lat = {
+            -6.298974, -6.309808, -6.313498
+    };
+
+    private Double[] lng = {
+            106.110394, 106.109111, 106.103395
     };
 
     private List<HotelModel> hotelModels = new ArrayList<>();
@@ -42,12 +67,17 @@ public class HotelPresenterImpl implements HotelPresenter {
 
     public void setData(){
 
-        for (int i = 0; i < img.length; i++){
+        for (int i = 0; i < actiImg.length; i++){
 
             HotelModel hotelModel = new HotelModel();
-            hotelModel.setTitle(title[i]);
-            hotelModel.setIdgrid(i);
-            hotelModel.setImgUrl(img[i]);
+            hotelModel.setNama(nama[i]);
+            hotelModel.setImgActivityUrl(actiImg[i]);
+            hotelModel.setLocation(location[i]);
+            hotelModel.setKontak(kontak[i]);
+            hotelModel.setWeb(web[i]);
+            hotelModel.setCaption(caption[i]);
+            hotelModel.setLat(lat[i]);
+            hotelModel.setLng(lng[i]);
 
             hotelModels.add(hotelModel);
         }

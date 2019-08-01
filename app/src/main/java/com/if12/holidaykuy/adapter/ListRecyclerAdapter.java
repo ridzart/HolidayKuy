@@ -18,6 +18,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.if12.holidaykuy.Detail;
 import com.if12.holidaykuy.DetailHotelFragment;
 import com.if12.holidaykuy.GlideApp;
 import com.if12.holidaykuy.MainActivity;
@@ -54,8 +55,22 @@ public class ListRecyclerAdapter extends RecyclerView.Adapter<ListRecyclerAdapte
         holder.cardViewWisata.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                MainActivity activity = (MainActivity) v.getContext();
-                loadFragment(activity, new DetailHotelFragment());
+                Intent intent = new Intent(mContext, Detail.class);
+
+                //passing data to detail
+                Bundle bundle = new Bundle();
+                bundle.putString("nama", listModel.getNama());
+                bundle.putString("lokasi", listModel.getLocation());
+                bundle.putString("kontak", listModel.getKontak());
+                bundle.putString("caption", listModel.getCaption());
+                bundle.putDouble("lat", listModel.getLat());
+                bundle.putDouble("lng", listModel.getLng());
+                bundle.putString("gambar", listModel.getImgActivityUrl());
+                bundle.putString("web", listModel.getWeb());
+                intent.putExtras(bundle);
+
+                //start activity
+                mContext.startActivity(intent);
             }
         });
         //holder.BtnTracking.setOnClickListener(new View.OnClickListener() {
