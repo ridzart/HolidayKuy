@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "710013488270",
+    "firebase_url": "https://holidaykuyfirebaseproject.firebaseio.com",
+    "project_id": "holidaykuyfirebaseproject",
+    "storage_bucket": "holidaykuyfirebaseproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:710013488270:android:4df988e7da626150",
+        "android_client_info": {
+          "package_name": "com.if12.holidaykuy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "710013488270-gs5sfaikvj9g2nqakq0gr8gr30juuh8m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.if12.holidaykuy",
+            "certificate_hash": "cd4308502b95599f470bd146e06d52d3c13a1626"
+          }
+        },
+        {
+          "client_id": "710013488270-dkbau90mausq1gvg5gtor4jmhgq6s9f0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8WS36h44kl_c8MEWZaym4DjpY-SLfImA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "710013488270-dkbau90mausq1gvg5gtor4jmhgq6s9f0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

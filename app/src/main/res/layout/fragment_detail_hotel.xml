@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:padding="7dp"
+    tools:context=".DetailHotelFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_bg_object"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/hikikomori"
+            android:layout_alignParentTop="true"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+
+                <!-- OBJECTNAME -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="200dp"
+                    android:background="@color/colorWhite"
+                    android:orientation="vertical"
+                    android:paddingStart="30dp"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="20dp"
+                    android:paddingEnd="30dp"
+                    android:paddingRight="30dp"
+                    android:paddingBottom="19dp">
+
+
+
+
+                        <TextView
+                            android:id="@+id/nama_object"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            app:fontFamily="@font/montserrat_bold"
+                            android:text="Nama Object"
+                            android:textColor="#000"
+                            android:textSize="20dp" />
+
+
+
+                </LinearLayout>
+
+
+                <!--END OF OBJECT NAME -->
+
+                <!--ABOUT-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="30dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/bg_rounded_layout">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:paddingLeft="30dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_outline_location_white_24px" />
+
+                        <TextView
+                            android:id="@+id/location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:lineSpacingMultiplier="1.5"
+                            android:text="Ini lokasinya"
+                            android:textSize="13dp"
+                            android:textColor="#ffffff"
+                            app:fontFamily="@font/montserrat_regular" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:paddingLeft="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imgFacebook"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:src="@drawable/ic_phone_call" />
+
+                        <TextView
+                            android:id="@+id/phoneNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:lineSpacingMultiplier="1.5"
+                            android:text="083813432156"
+                            android:textSize="13dp"
+                            android:textColor="#ffffff"
+                            app:fontFamily="@font/montserrat_regular" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:paddingLeft="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imgInstagram"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:src="@drawable/ic_web_url" />
+
+                        <TextView
+                            android:id="@+id/webUrl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:lineSpacingMultiplier="1.5"
+                            android:text="ini alamat web"
+                            android:textSize="13dp"
+                            android:textColor="#ffffff"
+                            app:fontFamily="@font/montserrat_regular" />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <!--END OF ABOUT-->
+
+                <!--DESCRIPTION-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="30dp"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="20dp"
+                    android:paddingEnd="30dp"
+                    android:paddingRight="30dp"
+                    android:paddingBottom="19dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/bg_rounded_layout">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:fontFamily="@font/montserrat_bold"
+                        android:text="@string/txt_desc"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorWhite" />
+
+                    <TextView
+                        android:id="@+id/deskripsi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        app:fontFamily="@font/montserrat_regular"
+                        android:lineSpacingMultiplier="1.5"
+                        android:text="@string/str_desc"
+                        android:textColor="@color/colorFontGray"
+                        android:paddingBottom="20dp"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:id="@+id/btnMaps"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_btn_rounded"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="20dp"
+                        android:paddingStart="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingEnd="20dp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_outline_location_white_24px"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:textSize="12sp"
+                            android:text="@string/str_location"
+                            android:textColor="@color/colorWhite"
+                            app:fontFamily="@font/montserrat_bold"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <!--END OF DESCRIPTION-->
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</FrameLayout>
