@@ -6,6 +6,7 @@ android {
         applicationId "com.if12.holidaykuy"
         minSdkVersion 16
         targetSdkVersion 26
+        multiDexEnabled true
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -61,4 +62,6 @@ dependencies {
     implementation 'com.google.firebase:firebase-core:16.0.8'
 
     testImplementation 'junit:junit:4.12'
+
+    implementation 'com.android.support:multidex:1.0.3'
 }

@@ -13,22 +13,24 @@ public class RestorantPresenterImpl implements RestorantPresenter{
     private Context mContext;
 
     private String[] nama = {
-            "Saung Banyu Djawi", "S'Rizki Restoran", "Dapur Liwet Pandeglang", "Dapoer Iboe Resto", "Mc Bamm Corner Cafe"
+            "Saung Banyu Djawi", "S'Rizki Restoran", "Dapur Liwet Pandeglang", "Dapoer Iboe Resto", "Mc Bamm Corner Cafe", "RM Abah Udin",
+            "RM Rizquna", "Ayam Bakar Pak Raden"
     };
 
     private String[] lokasi = {
             "Jl. Jend. Sudirman Komplek Perkantoran Cikupa Dpn Dinas ", "Jl. Raya Serang KM. 01, No. 26, Picung, Pandeglang, Kec. Pandeglang, Kabupaten Pandeglang, Banten",
             "Jl. Bank Banten No.3-2, Kabayan, Kec. Pandeglang, Kabupaten Pandeglang, Banten", "Jl. Kyai H. Moh. Idrus No.2, Pandeglang, Kec. Pandeglang, Kabupaten Pandeglang, Banten",
-            "Pandeglang, Kec. Pandeglang, Kabupaten Pandeglang, BantenKabupaten Pandeglang, Banten"
+            "Pandeglang, Kec. Pandeglang, Kabupaten Pandeglang, BantenKabupaten Pandeglang, Banten", "Jl. AMD Lintas Tim. No.777, Kabayan, Kec. Pandeglang, Kabupaten Pandeglang, Banten",
+            "JL Raya Labuan, Km. 4, Cipacung, Saruni, Pandeglang, Kabupaten Pandeglang, Banten", "Jalan Raya Labuan KM.2, Karaton, Majasari, Karaton, Kabupaten Pandeglang, Banten"
     };
 
     private String[] kontak = {
-            "087773942098", "0253203210", "087772555898", "0253204321", "08176815508"
+            "087773942098", "0253203210", "087772555898", "0253204321", "08176815508", "Tidak ada kontak", "087871687007", "081906063149"
     };
 
     private String[] web = {
             "https://www.facebook.com/pg/saungbanyudajwi", "https://rumah-makan-s-rizki-pandeglang.business.site/", "Tidak memiliki alamat web",
-            "Tidak memiliki alamat web", "Tidak memiliki alamat web"
+            "Tidak memiliki alamat web", "Tidak memiliki alamat web", "Tidak memiliki alamat web", "Tidak memiliki alamat web", "Tidak memiliki alamat web"
     };
 
     private String[] caption = {
@@ -50,7 +52,32 @@ public class RestorantPresenterImpl implements RestorantPresenter{
                     "Mulai dari makanan Sunda hingga Eropa. Sebut saja gurame goreng cobek dan otak-otak khas Dapoer Iboe yang disajikan bersama jus sirsak sehat yang siap menggoyang lidah. Saya sendiri sudah beberapa kali nongkrong disini bersama keluarga dan juga kadang teman-teman yang lain. Karena tempatnya cukup nyaman walaupun berada di jantung kota.\n" +
                     "\n" +
                     "Dalam jam operasinya, restoran yang berdiri sejak Juli 2008 ini buka setiap hari dari 09.30-22.00.",
-            "Mc Bamm Corner merupakan salah satu tempat nongkrong favorit yang ada di Pandeglang. Di sini menjual beraneka macam makanan khas Pandeglang seperti nasi bakar, nasi ceker, apem, dll. Suasana cafenya sangat nyaman untuk berkumpul bersama keluarga dan kawan-kawan."
+            "Mc Bamm Corner merupakan salah satu tempat nongkrong favorit yang ada di Pandeglang. Di sini menjual beraneka macam makanan khas Pandeglang seperti nasi bakar, nasi ceker, apem, dll. Suasana cafenya sangat nyaman untuk berkumpul bersama keluarga dan kawan-kawan.",
+            "Warung nasi Abah Udin berada sekitar 50 meter dari lampu merah kadubanen ini berada di lintasan Jalan AMD Lintas Timur.\n" +
+                    "ada lokasi parkir yang dapat memuat mobil sekitar hingga tujuh mobil. lokasi di dalamnya luas ada tempat lesehan, ada juga tersedia meja dan kursi, kemudian juga ada saung-saung Gazebo di sampingnya untuk makan bersama keluarga dan grup, ada juga mushola kecil, saya pernah menjadi imam di mushola tersebut ketika bulan puasa, di samping mushola adalah jurang. ada toilet tentunya, untuk menu makanannya bervariasi mengutamakan olahan jenis ikan ikan laut bakar, cumi, udang, ayam, pepes ikan, ikan asin,olahan ikan air tawar, rasanya enak, mantap, harganya hemat terjangkau.\n" +
+                    "\n" +
+                    "lokasi ini biasanya ramai dikunjungi Pada saat jam makan siang.\n" +
+                    "\n" +
+                    "Berhati-hatilah saat Anda keluar dari lokasi parkir rumah makan ini karena jalurnya dekat dengan lampu merah di mana mobil terkadang keluar masuk dari dua arah.\n" +
+                    "\n" +
+                    "di dekat dengan lokasi ini ada terminal kadubanen, ada Alfamart kadubanen, dan juga SPBU, pengisian bensin kadubanen. Selamat menikmati hidangan makannya di warung nasi Abah Udin",
+            "Senin\n" +
+                    "08:00 - 21:00\n" +
+                    "Selasa\n" +
+                    "08:00 - 21:00\n" +
+                    "Rabu\n" +
+                    "08:00 - 21:00\n" +
+                    "Kamis\n" +
+                    "08:00 - 21:00\n" +
+                    "Jumat\n" +
+                    "08:00 - 21:00\n" +
+                    "Sabtu\n" +
+                    "08:00 - 21:00\n" +
+                    "Minggu\n" +
+                    "08:00 - 21:00",
+            "Ayam bakar dan goreng Pak Raden adalah salah satu tempat makan di ceqek Pandeglang lokasi dalemnya cukup luas terdapat beberapa kursi dan meja dan kita bisa memesan makanan di sini langsung makan di tempat atau kita juga bisa memesan untuk dibawa pulang melalui telepon juga bisa saya sering memesan ayam bakar maupun Ayam gorengnya per ekor dan diantar langsung ke lokasi pemesan instal di charge waterpark Cikole harganya relatif terjangkau Kalau tidak salah harga untuk satu ekor bisa Rp45.000. sebagai pelengkap kita juga diberikan lalapan dan sambal.\n" +
+                    "\n" +
+                    "Kekurangan dari tempat ini adalah tidak ada lokasi parkir jaraknya hanya 4 meter dari jalan raya paling bisa dimuat oleh dua mobil saja. Selamat menikmati ayam bakar dan ayam goreng Pak Raden"
     };
 
     private String[] gambar = {
@@ -58,15 +85,18 @@ public class RestorantPresenterImpl implements RestorantPresenter{
             "https://lh6.googleusercontent.com/-qOd0Tc452uo/TYG0gMWM4PI/AAAAAAAAAFU/iziK2Ph37g4/s1600/SL380013.JPG",
             "https://badakpos.com/wp-content/uploads/2018/04/IMG-20180428-WA0027.jpg",
             "https://1.bp.blogspot.com/-EeJgnRV_QqE/UcSXtn4NTEI/AAAAAAAAHig/nrwTeHLYuGI/s1600/dapoer.jpg",
-            "https://www.jejakpiknik.com/wp-content/uploads/2019/04/mm-1-1-630x380.jpg"
+            "https://www.jejakpiknik.com/wp-content/uploads/2019/04/mm-1-1-630x380.jpg",
+            "https://fastly.4sqi.net/img/general/width960/21735309_6o5Rg3L-c9ES-tQSQsGYYCFdBo7zll90RC-KGgblfps.jpg",
+            "https://fastly.4sqi.net/img/general/1398x536/951949_66OkdJHmnV6O_u4StbztMLpoES-I9EQs8waS9N1Q7So.jpg",
+            "https://fastly.4sqi.net/img/general/width960/2458976_784vSaKL7GhNitzi7bmGRc6XMFjmq_gs16mV4T4bzKQ.jpg"
     };
 
     private Double[] lat = {
-            -6.313395, -6.298974, -6.310711, -6.310754, -6.306290
+            -6.313395, -6.298974, -6.310711, -6.310754, -6.306290, -6.319060, -6.3304162, -6.319681
     };
 
     private Double[] lng = {
-            -106.100820, 106.110394, 106.108438, 106.106439, 106.105876
+            -106.100820, 106.110394, 106.108438, 106.106439, 106.105876, 106.118467, 106.081101, 106.098817
     };
 
 
